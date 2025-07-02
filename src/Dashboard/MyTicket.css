@@ -1,0 +1,109 @@
+.my-ticket-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.my-ticket {
+    margin-top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.search-icon {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.show-select {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.show-label {
+    margin-right: 10px;
+}
+
+.show-select-dropdown {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.entries-text {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr 2fr;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-column {
+    padding: 10px;
+    border-bottom: 2px solid #000;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr 2fr;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.row-column {
+    padding: 10px;
+}
+
+.status-in-progress {
+    background-color: #f5a623;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status-on-hold {
+    background-color: #f44336;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status-closed {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.star-icon {
+    color: #ffd700;
+}
+
+.pagination {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}

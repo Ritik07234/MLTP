@@ -1,0 +1,100 @@
+/* General Layout */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.dashboard-main {
+    display: flex;
+    flex: 1;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar Styling */
+.dashboard-content {
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Card Container */
+.dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Card Styles */
+.dashboard-card {
+    width: 250px;
+    height:280px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 5px 5px 0px 1px #9EA6A1;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto 0;
+}
+
+.dashboard-card p {
+    
+    margin: 0;
+    font-size: 2rem;
+}
+
+.dashboard-card h2 {
+    margin: 10px 0 0;
+    width: 100%;
+    font-size: 6rem;
+    position: absolute;
+    top: 40%;
+    left: 0;
+  
+}
+
+/* Card Colors */
+.card-blue {
+    background-color: #2196f3;
+}
+
+.card-green {
+    background-color: #4caf50;
+}
+
+.card-red {
+    background-color: #f44336;
+}
+
+.card-yellow {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
