@@ -130,7 +130,19 @@
         width: 100vw;
         min-width: 0;
         max-width: 100vw;
-        padding: 0 8px;
+        padding: 0 4px;
+    }
+    .table-header, .table-row {
+        font-size: 0.95rem;
+        padding: 0 2px;
+    }
+    .search-input, .show-select-dropdown {
+        width: 100%;
+        min-width: 0;
+        font-size: 1rem;
+    }
+    .my-ticket {
+        overflow-x: auto;
     }
 }
 @media (max-width: 600px) {
@@ -142,5 +154,12 @@
     .my-ticket-container {
         max-width: 100vw;
         padding: 0 2px;
+    }
+    .table-header, .table-row {
+        font-size: 0.85rem;
+        padding: 0 1px;
+    }
+    .search-input, .show-select-dropdown {
+        font-size: 0.95rem;
     }
 }

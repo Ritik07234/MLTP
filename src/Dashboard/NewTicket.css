@@ -134,12 +134,20 @@ textarea.gray-input {
         padding: 1rem 0.5rem 80px 0.5rem;
     }
     .new-ticket-content-area {
-        max-width: 100%;
-        padding: 1rem 0.5rem;
+        padding: 0 4px;
     }
     .row-flex {
         flex-direction: column;
         gap: 0.5rem;
+    }
+    .new-ticket-form, .form-flex-row, .form-grid {
+        flex-direction: column !important;
+        gap: 8px;
+    }
+    .gray-input, .submit-btn {
+        width: 100% !important;
+        min-width: 0;
+        font-size: 1rem;
     }
 }
 
@@ -159,6 +167,12 @@ textarea.gray-input {
         flex-direction: column;
         align-items: stretch;
         gap: 10px;
+    }
+    .new-ticket-content-area {
+        padding: 0 2px;
+    }
+    .gray-input, .submit-btn {
+        font-size: 0.95rem;
     }
 }
 

@@ -187,3 +187,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@media (max-width: 900px) {
+  .dashboard-cards {
+    flex-direction: column !important;
+    gap: 12px;
+  }
+  .dashboard-card {
+    width: 100% !important;
+    min-width: 0;
+    font-size: 1rem;
+    padding: 10px 6px;
+  }
+}
+@media (max-width: 600px) {
+  .dashboard-cards {
+    gap: 8px;
+  }
+  .dashboard-card {
+    font-size: 0.95rem;
+    padding: 8px 2px;
+  }
+}
