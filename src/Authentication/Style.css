@@ -154,7 +154,7 @@ body, html, #root {
     }
 }
 
-.footer-area {
+/* .footer-area {
     width: 1190px;
     height: 50px;
     background-color: #55D6C2 !important;
@@ -172,4 +172,4 @@ body, html, #root {
     text-align: center;
     letter-spacing: 1px;
     z-index: 10;
-}
+} */

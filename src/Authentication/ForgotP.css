@@ -1,48 +1,48 @@
 .container {
-    height: 100vh; /* Full viewport height */
+    width: 1440px;
+    height: 1000px;
     background-color: #40e0d0; /* Turquoise background */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-  }
-  
-  .form-box {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.form-box {
     background-color: #A2E2D8; /* White background inside the form box */
+    width: 1000px;
+    height: 700px;
     padding: 30px;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: 1150px; /* Increased width */
-     /* Full width for smaller screens */
-    min-height: 650px; /* Increased height */
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
-    
-    
     text-align: center;
-  }
-  
-  .form-text {
+}
+
+.form-text {
     font-size: 30px;
     color: black; /* Dark text for contrast */
     margin-bottom: 80px;
     text-align: center;
-  }
-  
-  form {
+}
+
+form {
     display: flex;
     flex-direction: column;
     gap: 15px; /* Spacing between inputs and buttons */
     text-align: center;
-  }
-  .forgotinput{
+}
+
+.forgotinput{
     width: 150%;
     align-self: center;
-  }
-  input {
+}
+
+input {
     width: 100%;
     padding: 12px;
     /* border: 1px solid #e0e0e0; */
@@ -51,11 +51,9 @@
     outline: none;
     box-sizing: border-box;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  }
-  
- 
-  
-  button {
+}
+
+button {
     width: 100%;
     padding: 12px;
     border: none;
@@ -63,18 +61,18 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  button.submit-btn {
+}
+
+button.submit-btn {
     background-color: #28a745; /* Green for submit */
     color: #ffffff; /* White text */
-  }
-  
-  button.submit-btn:hover {
+}
+
+button.submit-btn:hover {
     background-color: #218838; /* Darker green on hover */
-  }
-  
-  button.signin-btn {
+}
+
+button.signin-btn {
     width: 12em;
     font-size: 1.5rem;
     color: white;
@@ -84,8 +82,9 @@
     border: none;
     cursor: pointer;
     margin-top: 1rem;
-  }
-  .signup-btn {
+}
+
+.signup-btn {
     width: 12em;
     font-size: 1.5rem;
     color: white;
@@ -96,12 +95,13 @@
     cursor: pointer;
     /* margin-top: 1rem; */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  button.signin-btn:hover {
+}
+
+button.signin-btn:hover {
     background-color: #0056b3; /* Darker blue on hover */
-  }
-  input {
+}
+
+input {
     width: 45%;
     padding: 12px;
     border: 1px solid #0c0b0b;
@@ -111,9 +111,9 @@
     box-sizing: border-box;
     height: 50px;
     position:center;
-  }
-  
-  button:active {
+}
+
+button:active {
     transform: scale(0.98); /* Press effect */
-  }
-  
+}
+
