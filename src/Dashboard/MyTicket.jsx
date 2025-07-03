@@ -16,86 +16,9 @@ function MyTicket() {
     const [page, setPage] = useState(1);
 
     useEffect(() => {
-        // User-provided ticket data
-        const userTickets = [
-            {
-                ticketNo: '1234',
-                subject: 'Login issue',
-                description: 'Login issue',
-                status: 'In Progress',
-                supportBy: 'Tech support',
-                date: '13/08/21',
-                rate: 0,
-                name: '',
-                department: '',
-                category: '',
-                type: '',
-                priority: '',
-                attachment: ''
-            },
-            {
-                ticketNo: '1124',
-                subject: 'New ticket',
-                description: 'New ticket',
-                status: 'On hold',
-                supportBy: 'Operation Team',
-                date: '14/08/21',
-                rate: 0,
-                name: '',
-                department: '',
-                category: '',
-                type: '',
-                priority: '',
-                attachment: ''
-            },
-            {
-                ticketNo: '1224',
-                subject: 'issue',
-                description: 'issue',
-                status: 'Closed',
-                supportBy: 'Tech support',
-                date: '13/08/21',
-                rate: 0,
-                name: '',
-                department: '',
-                category: '',
-                type: '',
-                priority: '',
-                attachment: ''
-            },
-            {
-                ticketNo: '1244',
-                subject: 'New request',
-                description: 'New request',
-                status: 'In Progress',
-                supportBy: 'Operation Team',
-                date: '14/08/21',
-                rate: 0,
-                name: '',
-                department: '',
-                category: '',
-                type: '',
-                priority: '',
-                attachment: ''
-            },
-            {
-                ticketNo: '1114',
-                subject: 'Ticket submission',
-                description: 'Ticket submission',
-                status: 'In Progress',
-                supportBy: 'Tech support',
-                date: '3/08/21',
-                rate: 0,
-                name: '',
-                department: '',
-                category: '',
-                type: '',
-                priority: '',
-                attachment: ''
-            }
-        ];
-        localStorage.setItem('tickets', JSON.stringify(userTickets));
-        setTickets(userTickets);
+        // Load tickets from localStorage so new tickets are shown
+        const stored = JSON.parse(localStorage.getItem('tickets') || '[]');
+        setTickets(stored);
     }, []);
 
     const openModal = (ticket) => setSelectedTicket(ticket);
@@ -270,6 +193,7 @@ function MyTicket() {
                                         <div><b>Type:</b> {selectedTicket.type || ''}</div>
                                         <div><b>Priority:</b> {selectedTicket.priority || ''}</div>
                                         <div><b>Status:</b> {selectedTicket.status || ''}</div>
+                                        <div><b>Support by:</b> {selectedTicket.supportBy || ''}</div>
                                         <div><b>Attachment:</b> {selectedTicket.attachment || ''}</div>
                                     </div>
                                     <button style={{
