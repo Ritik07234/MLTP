@@ -7,6 +7,13 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent default form submission
+        const username = e.target[0].value.trim();
+        const password = e.target[1].value.trim();
+        const email = e.target[2].value.trim();
+        if (!username || !password || !email) {
+            alert('Please fill all fields.');
+            return;
+        }
         // Add sign-up logic here (e.g., form validation, API call)
         navigate('/dashboard'); // Redirect to the dashboard page
     };

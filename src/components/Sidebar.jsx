@@ -1,5 +1,5 @@
 import React from 'react';
-import './Side.css';
+import './Sidebar.css';
 import { Link } from "react-router-dom";
 import Dashboard_img from '../Images/Dashboard_Layout.png';
 import New_Ticket from '../Images/New Ticket.png';
@@ -26,9 +26,8 @@ function Sidebar() {
                     <span className="sidebarLinks">My Ticket</span>
                 </Link>
             </span>
-            
         </div>
     )
 }
 
-export default Sidebar
+export default Sidebar; 

@@ -7,6 +7,12 @@ function Signin() {
 
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent the default form submission behavior
+        const username = e.target[0].value.trim();
+        const password = e.target[1].value.trim();
+        if (!username || !password) {
+            alert('Please enter both username and password.');
+            return;
+        }
         // Add validation or authentication logic here if needed
         navigate('/dashboard'); // Redirect to the dashboard page
     };

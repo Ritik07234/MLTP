@@ -1,10 +1,14 @@
 .navbar {
+    width: 1440px;
+    height: 90px;
+    min-height: 90px;
+    max-height: 90px;
+    background-color: #55D6C2;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:#55D6C2; /* Material-UI primary color */
-    padding: 10px 20px;
     color: rgb(0, 40, 0);
+    margin: 0 auto;
 }
 
 .title {
@@ -30,4 +34,22 @@
 .navIcons {
     font-size: 1.8rem;
     cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    .navbar {
+        width: 100vw;
+        min-width: unset;
+        max-width: unset;
+    }
+}
+@media (max-width: 900px) {
+    .navbar {
+        width: 100vw;
+        min-width: unset;
+        max-width: unset;
+        height: 60px;
+        min-height: 60px;
+        max-height: 60px;
+    }
 }

@@ -1,10 +1,19 @@
 /* General container styling */
 .new-ticket-container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
+    width: 100%;
+    max-width: 1190px;
+    min-width: 0;
+    height: auto;
+    margin: 0 auto;
     font-family: Arial, sans-serif;
     color: #333;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 /* Heading styles */
@@ -18,17 +27,26 @@
 /* Form container styles */
 .form-container {
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 24px 16px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
 }
 
 /* Row layout for form elements */
 .form-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Column layout for specific sections */
@@ -42,28 +60,27 @@
 /* Label styles */
 .form-label {
     font-size: 1rem;
-    margin-bottom: 10px;
-    margin:0  10px;
+    margin-bottom: 6px;
+    margin-right: 8px;
+    min-width: 90px;
 }
 
 /* Input and textarea styles */
 .form-input, 
+.form-input-wide, 
 .form-textarea {
+    flex: 1 1 180px;
     width: 100%;
     padding: 8px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     outline: none;
+    box-sizing: border-box;
 }
 
 .form-input-wide {
-    width: 96%;
-    padding: 8px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
+    width: 100%;
 }
 
 /* Textarea specific */
@@ -83,8 +100,106 @@
     cursor: pointer;
     transition: background-color 0.3s;
     align-self: flex-end;
+    margin-top: 10px;
 }
 
-.submit-btn:hover {
-    background-color: #0056b3;
+.submit-btn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+body, html, #root {
+    width: 1440px;
+    min-width: 1440px;
+    max-width: 1440px;
+    height: 1024px;
+    min-height: 1024px;
+    max-height: 1024px;
+    margin: 0 auto;
+    background: #f4f4f4;
+}
+
+.new-ticket-content-area {
+    width: 1190px;
+    height: 884px;
+    max-width: 1190px;
+    max-height: 884px;
+    min-width: 1190px;
+    min-height: 884px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.new-ticket-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 16px;
+}
+
+.gray-input {
+    background: #e0e0e0;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.robot-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    background: #f4f4f4;
+    padding: 10px 16px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.footer-area {
+    width: 1190px;
+    min-width: 1190px;
+    max-width: 1190px;
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    background-color: #55D6C2 !important;
+    color: #111 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    border-radius: 0;
+    position: absolute;
+    left: 250px;
+    bottom: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 10;
+    box-sizing: border-box;
 }
