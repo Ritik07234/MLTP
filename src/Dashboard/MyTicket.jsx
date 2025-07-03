@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
-import { Link } from "react-router-dom";
 import SearchIcon from '@mui/icons-material/Search';
 import StarIcon from '@mui/icons-material/Star';
 import './MyTicket.css'; 
-import Box from '@mui/material/Box';
 import Footer from '../components/Footer';
 
 function MyTicket() {

@@ -4,7 +4,6 @@ import Signup from './Authentication/Signup';
 import Forgotpassword from './Authentication/Forgotpassword';
 import Dashboard from './Dashboard/Dashboard';
 
-import SideProfile from './Dashboard/SideProfile';
 import NewTicket from './Dashboard/NewTicket'; // Adjust the path if necessary
 import MyTicket from './Dashboard/MyTicket';
 
